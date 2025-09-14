@@ -59,7 +59,7 @@ tmp/
 temp/
 
 # Image placeholders (replace with actual images)
-images/bg.jpg
+# images/bg.jpg - Now using real background image
 images/products/*.jpg
 images/products/*.png
 images/certificates/*.jpg
