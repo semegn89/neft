@@ -119,6 +119,7 @@ p {
     transition: all var(--transition-fast);
     text-align: center;
     white-space: nowrap;
+    min-height: 44px; /* Ensure minimum touch target */
 }
 
 .btn-primary {
@@ -331,7 +332,7 @@ p {
     right: 0;
     bottom: 0;
     background: linear-gradient(135deg, rgba(26, 54, 93, 0.8) 0%, rgba(45, 55, 72, 0.8) 100%), 
-                url('../images/bg.jpg') center/cover no-repeat;
+                url('../images/bg.svg') center/cover no-repeat;
     background-color: var(--primary-color); /* Fallback color */
     z-index: -2;
 }
