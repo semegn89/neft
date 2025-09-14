@@ -29,13 +29,18 @@ function initLanguageSwitcher() {
                 const elementLang = element.getAttribute('data-lang');
                 if (elementLang === selectedLang) {
                     element.style.display = '';
+                    element.style.visibility = 'visible';
                 } else {
                     element.style.display = 'none';
+                    element.style.visibility = 'hidden';
                 }
             });
             
             // Store language preference
             localStorage.setItem('selectedLanguage', selectedLang);
+            
+            // Force reflow to ensure changes are applied
+            document.body.offsetHeight;
         });
     });
     
@@ -44,7 +49,36 @@ function initLanguageSwitcher() {
     if (savedLang) {
         const savedButton = document.querySelector(`[data-lang="${savedLang}"]`);
         if (savedButton) {
-            savedButton.click();
+            // Manually trigger language switch without click
+            langButtons.forEach(btn => btn.classList.remove('active'));
+            savedButton.classList.add('active');
+            
+            elements.forEach(element => {
+                const elementLang = element.getAttribute('data-lang');
+                if (elementLang === savedLang) {
+                    element.style.display = '';
+                    element.style.visibility = 'visible';
+                } else {
+                    element.style.display = 'none';
+                    element.style.visibility = 'hidden';
+                }
+            });
+        }
+    } else {
+        // Default to Russian
+        const ruButton = document.querySelector('[data-lang="ru"]');
+        if (ruButton) {
+            ruButton.classList.add('active');
+            elements.forEach(element => {
+                const elementLang = element.getAttribute('data-lang');
+                if (elementLang === 'ru') {
+                    element.style.display = '';
+                    element.style.visibility = 'visible';
+                } else {
+                    element.style.display = 'none';
+                    element.style.visibility = 'hidden';
+                }
+            });
         }
     }
 }
