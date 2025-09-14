@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
 function initLanguageSwitcher() {
     const langButtons = document.querySelectorAll('.lang-btn');
     
-    function switchLanguage(targetLang) {
-        const elements = document.querySelectorAll('[data-lang]');
+        function switchLanguage(targetLang) {
+            const elements = document.querySelectorAll('[data-lang]:not(.lang-btn)');
         
         // Update active button
         langButtons.forEach(btn => {
@@ -40,8 +40,23 @@ function initLanguageSwitcher() {
             }
         });
         
-        // Store language preference
-        localStorage.setItem('selectedLanguage', targetLang);
+            // Store language preference
+            localStorage.setItem('selectedLanguage', targetLang);
+            
+            // Update <html lang="...">
+            document.documentElement.setAttribute('lang', targetLang);
+            
+            // Update title and meta description
+            const title = document.querySelector('title[data-lang="' + targetLang + '"]');
+            const description = document.querySelector('meta[name="description"][data-lang="' + targetLang + '"]');
+            
+            if (title) {
+                document.title = title.textContent;
+            }
+            
+            if (description) {
+                description.setAttribute('content', description.getAttribute('content'));
+            }
         
         console.log('Language switched to:', targetLang);
     }
