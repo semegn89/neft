@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Специальная химия | ООО "Нефть"</title>
+    <meta name="description" content="Специализированные химические продукты для различных отраслей промышленности. Высокое качество, соответствие стандартам, быстрая доставка.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="../images/logo.svg" alt="Нефть" class="logo">
+                    <span class="brand-text">Нефть</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Главная</a></li>
+                    <li class="dropdown">
+                        <a href="#products" class="nav-link active">Продукция <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="petroleum.html">Нефтепродукты</a></li>
+                            <li><a href="polymers.html">Полимеры</a></li>
+                            <li><a href="specialty.html" class="active">Специальная химия</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../about.html" class="nav-link">О компании</a></li>
+                    <li><a href="../contacts.html" class="nav-link">Контакты</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="ru">RU</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                    <a href="../contacts.html#quote" class="btn btn-primary">Запросить предложение</a>
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="../index.html" data-lang="ru">Главная</a>
+                <a href="../index.html" data-lang="en" style="display: none;">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <a href="#products" data-lang="ru">Продукция</a>
+                <a href="#products" data-lang="en" style="display: none;">Products</a>
+                <span class="breadcrumb-separator">/</span>
+                <span data-lang="ru">Специальная химия</span>
+                <span data-lang="en" style="display: none;">Specialty Chemicals</span>
+            </div>
+            
+            <h1 data-lang="ru">Специальная химия</h1>
+            <h1 data-lang="en" style="display: none;">Specialty Chemicals</h1>
+            
+            <p class="page-subtitle" data-lang="ru">Специализированные химические продукты для различных отраслей промышленности</p>
+            <p class="page-subtitle" data-lang="en" style="display: none;">Specialized chemical products for various industrial sectors</p>
+        </div>
+    </section>
+
+    <!-- Search and Filters -->
+    <section class="search-filters">
+        <div class="container">
+            <div class="search-bar">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Поиск по каталогу..." data-lang="ru">
+                    <input type="text" id="search-input" placeholder="Search catalog..." data-lang="en" style="display: none;">
+                </div>
+                <div id="search-results" class="search-results"></div>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all" data-lang="ru">Все продукты</button>
+                <button class="filter-btn active" data-category="all" data-lang="en" style="display: none;">All Products</button>
+                <button class="filter-btn" data-category="additives" data-lang="ru">Добавки</button>
+                <button class="filter-btn" data-category="additives" data-lang="en" style="display: none;">Additives</button>
+                <button class="filter-btn" data-category="solvents" data-lang="ru">Растворители</button>
+                <button class="filter-btn" data-category="solvents" data-lang="en" style="display: none;">Solvents</button>
+                <button class="filter-btn" data-category="catalysts" data-lang="ru">Катализаторы</button>
+                <button class="filter-btn" data-category="catalysts" data-lang="en" style="display: none;">Catalysts</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Fuel Additives -->
+                <div class="product-card" data-category="additives">
+                    <div class="product-image">
+                        <img src="../images/products/fuel-additives.jpg" alt="Топливные присадки" loading="lazy">
+                        <div class="product-badge">Популярный</div>
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3 data-lang="ru">Топливные присадки</h3>
+                        <h3 data-lang="en" style="display: none;">Fuel Additives</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            Комплексные присадки для улучшения характеристик топлива: повышение октанового числа, очистка системы, защита от коррозии.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            Comprehensive additives to improve fuel characteristics: octane number increase, system cleaning, corrosion protection.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Тип:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Type:</span>
+                                <span class="spec-value" data-lang="ru">Комплексные присадки</span>
+                                <span class="spec-value" data-lang="en" style="display: none;">Complex additives</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Концентрация:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Concentration:</span>
+                                <span class="spec-value">0.1-0.5%</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Фасовка:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Packaging:</span>
+                                <span class="spec-value" data-lang="ru">Канистры, бочки</span>
+                                <span class="spec-value" data-lang="en" style="display: none;">Canisters, barrels</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industrial Solvents -->
+                <div class="product-card" data-category="solvents">
+                    <div class="product-image">
+                        <img src="../images/products/industrial-solvents.jpg" alt="Промышленные растворители" loading="lazy">
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3 data-lang="ru">Промышленные растворители</h3>
+                        <h3 data-lang="en" style="display: none;">Industrial Solvents</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            Высококачественные растворители для различных промышленных применений: очистка, обезжиривание, растворение.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            High-quality solvents for various industrial applications: cleaning, degreasing, dissolving.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Тип:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Type:</span>
+                                <span class="spec-value" data-lang="ru">Углеводородные</span>
+                                <span class="spec-value" data-lang="en" style="display: none;">Hydrocarbon</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Чистота:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Purity:</span>
+                                <span class="spec-value">> 99%</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Температура кипения:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Boiling point:</span>
+                                <span class="spec-value">40-200°C</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Catalysts -->
+                <div class="product-card" data-category="catalysts">
+                    <div class="product-image">
+                        <img src="../images/products/catalysts.jpg" alt="Катализаторы" loading="lazy">
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3 data-lang="ru">Катализаторы</h3>
+                        <h3 data-lang="en" style="display: none;">Catalysts</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            Специализированные катализаторы для нефтехимических процессов. Высокая активность и селективность.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            Specialized catalysts for petrochemical processes. High activity and selectivity.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Тип:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Type:</span>
+                                <span class="spec-value" data-lang="ru">Металлоорганические</span>
+                                <span class="spec-value" data-lang="en" style="display: none;">Organometallic</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Активность:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Activity:</span>
+                                <span class="spec-value">Высокая</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Форма:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Form:</span>
+                                <span class="spec-value" data-lang="ru">Гранулы, порошок</span>
+                                <span class="spec-value" data-lang="en" style="display: none;">Granules, powder</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Corrosion Inhibitors -->
+                <div class="product-card" data-category="additives">
+                    <div class="product-image">
+                        <img src="../images/products/corrosion-inhibitors.jpg" alt="Ингибиторы коррозии" loading="lazy">
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3 data-lang="ru">Ингибиторы коррозии</h3>
+                        <h3 data-lang="en" style="display: none;">Corrosion Inhibitors</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            Эффективные ингибиторы коррозии для защиты металлического оборудования в нефтехимической промышленности.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            Effective corrosion inhibitors for protecting metal equipment in petrochemical industry.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Тип:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Type:</span>
+                                <span class="spec-value" data-lang="ru">Аминные</span>
+                                <span class="spec-value" data-lang="en" style="display: none;">Amine-based</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Эффективность:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Efficiency:</span>
+                                <span class="spec-value">> 95%</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Применение:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Application:</span>
+                                <span class="spec-value" data-lang="ru">Трубопроводы, резервуары</span>
+                                <span class="spec-value" data-lang="en" style="display: none;">Pipelines, tanks</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Surfactants -->
+                <div class="product-card" data-category="additives">
+                    <div class="product-image">
+                        <img src="../images/products/surfactants.jpg" alt="Поверхностно-активные вещества" loading="lazy">
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3 data-lang="ru">Поверхностно-активные вещества</h3>
+                        <h3 data-lang="en" style="display: none;">Surfactants</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            ПАВ для различных промышленных применений: эмульгирование, очистка, смачивание, стабилизация.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            Surfactants for various industrial applications: emulsification, cleaning, wetting, stabilization.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Тип:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Type:</span>
+                                <span class="spec-value" data-lang="ru">Анионные, неионогенные</span>
+                                <span class="spec-value" data-lang="en" style="display: none;">Anionic, nonionic</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">HLB:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">HLB:</span>
+                                <span class="spec-value">8-18</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Концентрация:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Concentration:</span>
+                                <span class="spec-value">30-80%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specialty Polymers -->
+                <div class="product-card" data-category="additives">
+                    <div class="product-image">
+                        <img src="../images/products/specialty-polymers.jpg" alt="Специальные полимеры" loading="lazy">
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3 data-lang="ru">Специальные полимеры</h3>
+                        <h3 data-lang="en" style="display: none;">Specialty Polymers</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            Функциональные полимеры с особыми свойствами: модификаторы вязкости, стабилизаторы, диспергаторы.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            Functional polymers with special properties: viscosity modifiers, stabilizers, dispersants.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Тип:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Type:</span>
+                                <span class="spec-value" data-lang="ru">Сополимеры</span>
+                                <span class="spec-value" data-lang="en" style="display: none;">Copolymers</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Молекулярная масса:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Molecular weight:</span>
+                                <span class="spec-value">10,000-500,000</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Применение:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Application:</span>
+                                <span class="spec-value" data-lang="ru">Модификация свойств</span>
+                                <span class="spec-value" data-lang="en" style="display: none;">Property modification</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Modal -->
+    <div id="spec-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Спецификация продукта</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-specs"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section id="quote" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-lang="ru">Нужна консультация по специальной химии?</h2>
+                <h2 data-lang="en" style="display: none;">Need consultation on specialty chemicals?</h2>
+                <p data-lang="ru">Наши специалисты помогут подобрать оптимальное решение для ваших задач</p>
+                <p data-lang="en" style="display: none;">Our specialists will help you find the optimal solution for your tasks</p>
+                <a href="../contacts.html" class="btn btn-primary btn-large">Связаться с нами</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="../images/logo.svg" alt="Нефть" class="footer-logo">
+                        <span class="brand-text">Нефть</span>
+                    </div>
+                    <p data-lang="ru">Надежный поставщик нефтепродуктов и полимеров для промышленности</p>
+                    <p data-lang="en" style="display: none;">Reliable supplier of petroleum products and polymers for industry</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-lang="ru">Продукция</h4>
+                    <h4 data-lang="en" style="display: none;">Products</h4>
+                    <ul>
+                        <li><a href="petroleum.html" data-lang="ru">Нефтепродукты</a><a href="petroleum.html" data-lang="en" style="display: none;">Petroleum Products</a></li>
+                        <li><a href="polymers.html" data-lang="ru">Полимеры</a><a href="polymers.html" data-lang="en" style="display: none;">Polymers</a></li>
+                        <li><a href="specialty.html" data-lang="ru">Специальная химия</a><a href="specialty.html" data-lang="en" style="display: none;">Specialty Chemicals</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-lang="ru">Компания</h4>
+                    <h4 data-lang="en" style="display: none;">Company</h4>
+                    <ul>
+                        <li><a href="../about.html" data-lang="ru">О нас</a><a href="../about.html" data-lang="en" style="display: none;">About Us</a></li>
+                        <li><a href="../contacts.html" data-lang="ru">Контакты</a><a href="../contacts.html" data-lang="en" style="display: none;">Contacts</a></li>
+                        <li><a href="../contacts.html#quote" data-lang="ru">Коммерческое предложение</a><a href="../contacts.html#quote" data-lang="en" style="display: none;">Commercial Offer</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-lang="ru">Контакты</h4>
+                    <h4 data-lang="en" style="display: none;">Contacts</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                        <p><i class="fas fa-envelope"></i> info@neft.ru</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Примерная, 123</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ООО "Нефть". <span data-lang="ru">Все права защищены.</span><span data-lang="en" style="display: none;">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/products.js"></script>
+</body>
+</html>

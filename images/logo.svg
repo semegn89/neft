@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a365d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d3748;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3182ce;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#logoGradient)" stroke="#ffffff" stroke-width="2"/>
+  
+  <!-- Oil drop shape -->
+  <path d="M50 20 C35 20, 25 30, 25 45 C25 55, 30 65, 40 75 C45 80, 50 85, 55 80 C65 70, 75 60, 75 45 C75 30, 65 20, 50 20 Z" fill="url(#accentGradient)"/>
+  
+  <!-- Inner highlight -->
+  <ellipse cx="45" cy="35" rx="8" ry="12" fill="#ffffff" opacity="0.3"/>
+  
+  <!-- Text -->
+  <text x="50" y="90" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ffffff">НЕФТЬ</text>
+</svg>

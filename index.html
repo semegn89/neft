@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нефтепродукты и Полимеры | ООО "Нефть"</title>
+    <meta name="description" content="Поставщик нефтепродуктов и полимеров. Качественные материалы для промышленности. Быстрая доставка по ЕС и СНГ.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="images/logo.svg" alt="Нефть" class="logo">
+                    <span class="brand-text">Нефть</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Главная</a></li>
+                    <li class="dropdown">
+                        <a href="#products" class="nav-link">Продукция <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#petroleum">Нефтепродукты</a></li>
+                            <li><a href="#polymers">Полимеры</a></li>
+                            <li><a href="#specialty">Специальная химия</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about" class="nav-link">О компании</a></li>
+                    <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="ru">RU</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                    <a href="#quote" class="btn btn-primary">Запросить предложение</a>
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-lang="ru">Надежный поставщик нефтепродуктов и полимеров</h1>
+                <h1 class="hero-title" data-lang="en" style="display: none;">Reliable supplier of petroleum products and polymers</h1>
+                
+                <p class="hero-subtitle" data-lang="ru">Высококачественные материалы для промышленности. Гарантированное качество, быстрая доставка по ЕС и СНГ, полный комплект сертификатов.</p>
+                <p class="hero-subtitle" data-lang="en" style="display: none;">High-quality materials for industry. Guaranteed quality, fast delivery across EU and CIS, complete set of certificates.</p>
+                
+                <div class="hero-actions">
+                    <a href="#quote" class="btn btn-primary btn-large">Получить коммерческое предложение</a>
+                    <a href="#products" class="btn btn-secondary btn-large">Каталог продукции</a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label" data-lang="ru">лет опыта</span>
+                        <span class="stat-label" data-lang="en" style="display: none;">years of experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label" data-lang="ru">видов продукции</span>
+                        <span class="stat-label" data-lang="en" style="display: none;">product types</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label" data-lang="ru">стран поставок</span>
+                        <span class="stat-label" data-lang="en" style="display: none;">delivery countries</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Overview -->
+    <section id="products-overview" class="products-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang="ru">Наши направления</h2>
+                <h2 data-lang="en" style="display: none;">Our Directions</h2>
+                <p data-lang="ru">Комплексные решения для промышленности</p>
+                <p data-lang="en" style="display: none;">Comprehensive solutions for industry</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card" data-category="petroleum">
+                    <div class="product-icon">
+                        <i class="fas fa-oil-can"></i>
+                    </div>
+                    <h3 data-lang="ru">Нефтепродукты</h3>
+                    <h3 data-lang="en" style="display: none;">Petroleum Products</h3>
+                    <p data-lang="ru">Бензин с добавками MTBE/ETBE, дизельное топливо, пропилен-оксид, уксусная кислота</p>
+                    <p data-lang="en" style="display: none;">Gasoline with MTBE/ETBE additives, diesel fuel, propylene oxide, acetic acid</p>
+                    <a href="#petroleum" class="btn btn-outline">Подробнее</a>
+                </div>
+                
+                <div class="product-card" data-category="polymers">
+                    <div class="product-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3 data-lang="ru">Полимеры</h3>
+                    <h3 data-lang="en" style="display: none;">Polymers</h3>
+                    <p data-lang="ru">Полипропилен, полиэтилен, брендовые материалы Hostacom, Softell, Adsyl, Hifax</p>
+                    <p data-lang="en" style="display: none;">Polypropylene, polyethylene, branded materials Hostacom, Softell, Adsyl, Hifax</p>
+                    <a href="#polymers" class="btn btn-outline">Подробнее</a>
+                </div>
+                
+                <div class="product-card" data-category="specialty">
+                    <div class="product-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 data-lang="ru">Специальная химия</h3>
+                    <h3 data-lang="en" style="display: none;">Specialty Chemicals</h3>
+                    <p data-lang="ru">Специализированные химические продукты для различных отраслей промышленности</p>
+                    <p data-lang="en" style="display: none;">Specialized chemical products for various industrial sectors</p>
+                    <a href="#specialty" class="btn btn-outline">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages -->
+    <section class="advantages">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang="ru">Наши преимущества</h2>
+                <h2 data-lang="en" style="display: none;">Our Advantages</h2>
+            </div>
+            
+            <div class="advantages-grid">
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 data-lang="ru">Гарантированное качество</h3>
+                    <h3 data-lang="en" style="display: none;">Guaranteed Quality</h3>
+                    <p data-lang="ru">Все продукты проходят строгий контроль качества и имеют соответствующие сертификаты</p>
+                    <p data-lang="en" style="display: none;">All products undergo strict quality control and have appropriate certificates</p>
+                </div>
+                
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3 data-lang="ru">Быстрая доставка</h3>
+                    <h3 data-lang="en" style="display: none;">Fast Delivery</h3>
+                    <p data-lang="ru">Оптимизированная логистика обеспечивает быструю доставку по ЕС и СНГ</p>
+                    <p data-lang="en" style="display: none;">Optimized logistics ensures fast delivery across EU and CIS</p>
+                </div>
+                
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-lang="ru">Экспертная поддержка</h3>
+                    <h3 data-lang="en" style="display: none;">Expert Support</h3>
+                    <p data-lang="ru">Команда специалистов поможет подобрать оптимальное решение для ваших задач</p>
+                    <p data-lang="en" style="display: none;">Our team of specialists will help you find the optimal solution for your tasks</p>
+                </div>
+                
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-lang="ru">Надежность</h3>
+                    <h3 data-lang="en" style="display: none;">Reliability</h3>
+                    <p data-lang="ru">Стабильные поставки и долгосрочное партнерство с ведущими производителями</p>
+                    <p data-lang="en" style="display: none;">Stable supplies and long-term partnerships with leading manufacturers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="quote" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-lang="ru">Готовы начать сотрудничество?</h2>
+                <h2 data-lang="en" style="display: none;">Ready to start cooperation?</h2>
+                <p data-lang="ru">Получите персональное коммерческое предложение в течение 24 часов</p>
+                <p data-lang="en" style="display: none;">Get a personalized commercial offer within 24 hours</p>
+                <a href="#contacts" class="btn btn-primary btn-large">Запросить предложение</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="images/logo.svg" alt="Нефть" class="footer-logo">
+                        <span class="brand-text">Нефть</span>
+                    </div>
+                    <p data-lang="ru">Надежный поставщик нефтепродуктов и полимеров для промышленности</p>
+                    <p data-lang="en" style="display: none;">Reliable supplier of petroleum products and polymers for industry</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-lang="ru">Продукция</h4>
+                    <h4 data-lang="en" style="display: none;">Products</h4>
+                    <ul>
+                        <li><a href="#petroleum" data-lang="ru">Нефтепродукты</a><a href="#petroleum" data-lang="en" style="display: none;">Petroleum Products</a></li>
+                        <li><a href="#polymers" data-lang="ru">Полимеры</a><a href="#polymers" data-lang="en" style="display: none;">Polymers</a></li>
+                        <li><a href="#specialty" data-lang="ru">Специальная химия</a><a href="#specialty" data-lang="en" style="display: none;">Specialty Chemicals</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-lang="ru">Компания</h4>
+                    <h4 data-lang="en" style="display: none;">Company</h4>
+                    <ul>
+                        <li><a href="#about" data-lang="ru">О нас</a><a href="#about" data-lang="en" style="display: none;">About Us</a></li>
+                        <li><a href="#contacts" data-lang="ru">Контакты</a><a href="#contacts" data-lang="en" style="display: none;">Contacts</a></li>
+                        <li><a href="#quote" data-lang="ru">Коммерческое предложение</a><a href="#quote" data-lang="en" style="display: none;">Commercial Offer</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-lang="ru">Контакты</h4>
+                    <h4 data-lang="en" style="display: none;">Contacts</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                        <p><i class="fas fa-envelope"></i> info@neft.ru</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Примерная, 123</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ООО "Нефть". <span data-lang="ru">Все права защищены.</span><span data-lang="en" style="display: none;">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

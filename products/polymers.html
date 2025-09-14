@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Полимеры | ООО "Нефть"</title>
+    <meta name="description" content="Широкий ассортимент полимеров: полипропилен, полиэтилен, брендовые материалы Hostacom, Softell, Adsyl, Hifax. Высокое качество и быстрая доставка.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="../images/logo.svg" alt="Нефть" class="logo">
+                    <span class="brand-text">Нефть</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Главная</a></li>
+                    <li class="dropdown">
+                        <a href="#products" class="nav-link active">Продукция <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="petroleum.html">Нефтепродукты</a></li>
+                            <li><a href="polymers.html" class="active">Полимеры</a></li>
+                            <li><a href="specialty.html">Специальная химия</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../about.html" class="nav-link">О компании</a></li>
+                    <li><a href="../contacts.html" class="nav-link">Контакты</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="ru">RU</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                    <a href="../contacts.html#quote" class="btn btn-primary">Запросить предложение</a>
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="../index.html" data-lang="ru">Главная</a>
+                <a href="../index.html" data-lang="en" style="display: none;">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <a href="#products" data-lang="ru">Продукция</a>
+                <a href="#products" data-lang="en" style="display: none;">Products</a>
+                <span class="breadcrumb-separator">/</span>
+                <span data-lang="ru">Полимеры</span>
+                <span data-lang="en" style="display: none;">Polymers</span>
+            </div>
+            
+            <h1 data-lang="ru">Полимеры</h1>
+            <h1 data-lang="en" style="display: none;">Polymers</h1>
+            
+            <p class="page-subtitle" data-lang="ru">Инновационные полимерные материалы для современной промышленности</p>
+            <p class="page-subtitle" data-lang="en" style="display: none;">Innovative polymer materials for modern industry</p>
+        </div>
+    </section>
+
+    <!-- Search and Filters -->
+    <section class="search-filters">
+        <div class="container">
+            <div class="search-bar">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Поиск по каталогу..." data-lang="ru">
+                    <input type="text" id="search-input" placeholder="Search catalog..." data-lang="en" style="display: none;">
+                </div>
+                <div id="search-results" class="search-results"></div>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all" data-lang="ru">Все продукты</button>
+                <button class="filter-btn active" data-category="all" data-lang="en" style="display: none;">All Products</button>
+                <button class="filter-btn" data-category="pp" data-lang="ru">Полипропилен (PP)</button>
+                <button class="filter-btn" data-category="pp" data-lang="en" style="display: none;">Polypropylene (PP)</button>
+                <button class="filter-btn" data-category="pe" data-lang="ru">Полиэтилен (PE)</button>
+                <button class="filter-btn" data-category="pe" data-lang="en" style="display: none;">Polyethylene (PE)</button>
+                <button class="filter-btn" data-category="branded" data-lang="ru">Брендовые материалы</button>
+                <button class="filter-btn" data-category="branded" data-lang="en" style="display: none;">Branded Materials</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Polypropylene Homopolymer -->
+                <div class="product-card" data-category="pp">
+                    <div class="product-image">
+                        <img src="../images/products/pp-homopolymer.jpg" alt="Полипропилен гомополимер" loading="lazy">
+                        <div class="product-badge">Хит продаж</div>
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3 data-lang="ru">Полипропилен гомополимер</h3>
+                        <h3 data-lang="en" style="display: none;">Polypropylene Homopolymer</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            Высокопрочный полипропилен гомополимер с отличными механическими свойствами. Идеален для производства упаковки, автомобильных деталей и бытовых изделий.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            High-strength polypropylene homopolymer with excellent mechanical properties. Ideal for packaging, automotive parts and household products.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Плотность:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Density:</span>
+                                <span class="spec-value">0.905-0.920 g/cm³</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Температура плавления:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Melting point:</span>
+                                <span class="spec-value">160-170°C</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">MFI (230°C/2.16kg):</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">MFI (230°C/2.16kg):</span>
+                                <span class="spec-value">2-50 g/10min</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Polypropylene Copolymer -->
+                <div class="product-card" data-category="pp">
+                    <div class="product-image">
+                        <img src="../images/products/pp-copolymer.jpg" alt="Полипропилен сополимер" loading="lazy">
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3 data-lang="ru">Полипропилен сополимер</h3>
+                        <h3 data-lang="en" style="display: none;">Polypropylene Copolymer</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            Ударопрочный полипропилен сополимер с улучшенными низкотемпературными свойствами. Применяется в производстве контейнеров, труб и фитингов.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            Impact-resistant polypropylene copolymer with improved low-temperature properties. Used in the production of containers, pipes and fittings.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Плотность:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Density:</span>
+                                <span class="spec-value">0.890-0.910 g/cm³</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Температура плавления:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Melting point:</span>
+                                <span class="spec-value">140-160°C</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Ударная вязкость:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Impact strength:</span>
+                                <span class="spec-value">> 15 kJ/m²</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HDPE -->
+                <div class="product-card" data-category="pe">
+                    <div class="product-image">
+                        <img src="../images/products/hdpe.jpg" alt="Полиэтилен высокой плотности HDPE" loading="lazy">
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3 data-lang="ru">Полиэтилен высокой плотности (HDPE)</h3>
+                        <h3 data-lang="en" style="display: none;">High Density Polyethylene (HDPE)</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            Прочный и химически стойкий полиэтилен высокой плотности. Используется для производства труб, канистр, бутылок и упаковочных материалов.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            Strong and chemically resistant high density polyethylene. Used for the production of pipes, canisters, bottles and packaging materials.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Плотность:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Density:</span>
+                                <span class="spec-value">0.940-0.965 g/cm³</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Температура плавления:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Melting point:</span>
+                                <span class="spec-value">125-135°C</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Прочность на разрыв:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Tensile strength:</span>
+                                <span class="spec-value">25-35 MPa</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LDPE -->
+                <div class="product-card" data-category="pe">
+                    <div class="product-image">
+                        <img src="../images/products/ldpe.jpg" alt="Полиэтилен низкой плотности LDPE" loading="lazy">
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3 data-lang="ru">Полиэтилен низкой плотности (LDPE)</h3>
+                        <h3 data-lang="en" style="display: none;">Low Density Polyethylene (LDPE)</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            Гибкий и эластичный полиэтилен низкой плотности. Отлично подходит для производства пленок, пакетов и мягкой упаковки.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            Flexible and elastic low density polyethylene. Perfect for the production of films, bags and soft packaging.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Плотность:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Density:</span>
+                                <span class="spec-value">0.910-0.930 g/cm³</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Температура плавления:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Melting point:</span>
+                                <span class="spec-value">105-115°C</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Удлинение при разрыве:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Elongation at break:</span>
+                                <span class="spec-value">> 600%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LLDPE -->
+                <div class="product-card" data-category="pe">
+                    <div class="product-image">
+                        <img src="../images/products/lldpe.jpg" alt="Линейный полиэтилен низкой плотности LLDPE" loading="lazy">
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3 data-lang="ru">Линейный полиэтилен низкой плотности (LLDPE)</h3>
+                        <h3 data-lang="en" style="display: none;">Linear Low Density Polyethylene (LLDPE)</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            Линейный полиэтилен низкой плотности с улучшенными механическими свойствами. Применяется в производстве пленок, мешков и упаковочных материалов.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            Linear low density polyethylene with improved mechanical properties. Used in the production of films, bags and packaging materials.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Плотность:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Density:</span>
+                                <span class="spec-value">0.915-0.925 g/cm³</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Температура плавления:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Melting point:</span>
+                                <span class="spec-value">120-125°C</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Прочность на прокол:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Puncture resistance:</span>
+                                <span class="spec-value">Высокая</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hostacom -->
+                <div class="product-card branded" data-category="branded">
+                    <div class="product-image">
+                        <img src="../images/products/hostacom.jpg" alt="Hostacom полимерные композиции" loading="lazy">
+                        <div class="product-badge branded">Брендовый</div>
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3>Hostacom</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            Полимерные композиции Hostacom на основе полипропилена с минеральными наполнителями. Обеспечивают отличное соотношение цена/качество для автомобильной промышленности.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            Hostacom polymer compositions based on polypropylene with mineral fillers. Provide excellent price/quality ratio for automotive industry.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Базовая смола:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Base resin:</span>
+                                <span class="spec-value">PP гомополимер</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Наполнитель:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Filler:</span>
+                                <span class="spec-value">Тальк, стекловолокно</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Применение:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Application:</span>
+                                <span class="spec-value">Автомобильные детали</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Softell -->
+                <div class="product-card branded" data-category="branded">
+                    <div class="product-image">
+                        <img src="../images/products/softell.jpg" alt="Softell термопластичные эластомеры" loading="lazy">
+                        <div class="product-badge branded">Брендовый</div>
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3>Softell</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            Термопластичные эластомеры Softell сочетают эластичность резины с технологичностью термопластов. Идеальны для уплотнений и мягких на ощупь поверхностей.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            Softell thermoplastic elastomers combine rubber elasticity with thermoplastic processability. Ideal for seals and soft-touch surfaces.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Тип:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Type:</span>
+                                <span class="spec-value">TPE/TPV</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Твердость:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Hardness:</span>
+                                <span class="spec-value">30-90 Shore A</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Применение:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Application:</span>
+                                <span class="spec-value">Уплотнения, ручки</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adsyl -->
+                <div class="product-card branded" data-category="branded">
+                    <div class="product-image">
+                        <img src="../images/products/adsyl.jpg" alt="Adsyl полипропиленовые композиции" loading="lazy">
+                        <div class="product-badge branded">Брендовый</div>
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3>Adsyl</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            Полипропиленовые композиции Adsyl с улучшенными адгезионными свойствами. Специально разработаны для многослойных применений и адгезионных слоев.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            Adsyl polypropylene compositions with improved adhesive properties. Specially developed for multilayer applications and adhesive layers.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Функция:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Function:</span>
+                                <span class="spec-value">Адгезионный слой</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Базовая смола:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Base resin:</span>
+                                <span class="spec-value">PP сополимер</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Применение:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Application:</span>
+                                <span class="spec-value">Многослойная упаковка</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hifax -->
+                <div class="product-card branded" data-category="branded">
+                    <div class="product-image">
+                        <img src="../images/products/hifax.jpg" alt="Hifax полипропиленовые композиции" loading="lazy">
+                        <div class="product-badge branded">Брендовый</div>
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3>Hifax</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            Высокоэффективные полипропиленовые композиции Hifax с минеральными наполнителями. Обеспечивают превосходные механические свойства и стабильность размеров.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            High-performance Hifax polypropylene compositions with mineral fillers. Provide excellent mechanical properties and dimensional stability.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Базовая смола:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Base resin:</span>
+                                <span class="spec-value">PP гомополимер</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Наполнитель:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Filler:</span>
+                                <span class="spec-value">Тальк, CaCO₃</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Применение:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Application:</span>
+                                <span class="spec-value">Автомобиль, бытовая техника</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Modal -->
+    <div id="spec-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Спецификация продукта</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-specs"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section id="quote" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-lang="ru">Нужна консультация по полимерам?</h2>
+                <h2 data-lang="en" style="display: none;">Need consultation on polymers?</h2>
+                <p data-lang="ru">Наши специалисты помогут подобрать оптимальный материал для вашего применения</p>
+                <p data-lang="en" style="display: none;">Our specialists will help you select the optimal material for your application</p>
+                <a href="../contacts.html" class="btn btn-primary btn-large">Связаться с нами</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="../images/logo.svg" alt="Нефть" class="footer-logo">
+                        <span class="brand-text">Нефть</span>
+                    </div>
+                    <p data-lang="ru">Надежный поставщик нефтепродуктов и полимеров для промышленности</p>
+                    <p data-lang="en" style="display: none;">Reliable supplier of petroleum products and polymers for industry</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-lang="ru">Продукция</h4>
+                    <h4 data-lang="en" style="display: none;">Products</h4>
+                    <ul>
+                        <li><a href="petroleum.html" data-lang="ru">Нефтепродукты</a><a href="petroleum.html" data-lang="en" style="display: none;">Petroleum Products</a></li>
+                        <li><a href="polymers.html" data-lang="ru">Полимеры</a><a href="polymers.html" data-lang="en" style="display: none;">Polymers</a></li>
+                        <li><a href="specialty.html" data-lang="ru">Специальная химия</a><a href="specialty.html" data-lang="en" style="display: none;">Specialty Chemicals</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-lang="ru">Компания</h4>
+                    <h4 data-lang="en" style="display: none;">Company</h4>
+                    <ul>
+                        <li><a href="../about.html" data-lang="ru">О нас</a><a href="../about.html" data-lang="en" style="display: none;">About Us</a></li>
+                        <li><a href="../contacts.html" data-lang="ru">Контакты</a><a href="../contacts.html" data-lang="en" style="display: none;">Contacts</a></li>
+                        <li><a href="../contacts.html#quote" data-lang="ru">Коммерческое предложение</a><a href="../contacts.html#quote" data-lang="en" style="display: none;">Commercial Offer</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-lang="ru">Контакты</h4>
+                    <h4 data-lang="en" style="display: none;">Contacts</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                        <p><i class="fas fa-envelope"></i> info@neft.ru</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Примерная, 123</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ООО "Нефть". <span data-lang="ru">Все права защищены.</span><span data-lang="en" style="display: none;">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/products.js"></script>
+</body>
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | ООО "Нефть"</title>
+    <meta name="description" content="Свяжитесь с нами для получения коммерческого предложения. Телефон, email, адрес офиса. Быстрая обратная связь от специалистов по нефтепродуктам и полимерам.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="images/logo.svg" alt="Нефть" class="logo">
+                    <span class="brand-text">Нефть</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li class="dropdown">
+                        <a href="#products" class="nav-link">Продукция <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="products/petroleum.html">Нефтепродукты</a></li>
+                            <li><a href="products/polymers.html">Полимеры</a></li>
+                            <li><a href="products/specialty.html">Специальная химия</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html" class="nav-link">О компании</a></li>
+                    <li><a href="contacts.html" class="nav-link active">Контакты</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="ru">RU</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                    <a href="#quote" class="btn btn-primary">Запросить предложение</a>
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="index.html" data-lang="ru">Главная</a>
+                <a href="index.html" data-lang="en" style="display: none;">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <span data-lang="ru">Контакты</span>
+                <span data-lang="en" style="display: none;">Contacts</span>
+            </div>
+            
+            <h1 data-lang="ru">Контакты</h1>
+            <h1 data-lang="en" style="display: none;">Contacts</h1>
+            
+            <p class="page-subtitle" data-lang="ru">Свяжитесь с нами для получения персонального коммерческого предложения</p>
+            <p class="page-subtitle" data-lang="en" style="display: none;">Contact us for a personalized commercial offer</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-lang="ru">Адрес офиса</h3>
+                            <h3 data-lang="en" style="display: none;">Office Address</h3>
+                            <p>123456, Москва<br>ул. Примерная, д. 123<br>офис 456</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-lang="ru">Телефон</h3>
+                            <h3 data-lang="en" style="display: none;">Phone</h3>
+                            <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                            <p><a href="tel:+74951234568">+7 (495) 123-45-68</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-lang="ru">Email</h3>
+                            <h3 data-lang="en" style="display: none;">Email</h3>
+                            <p><a href="mailto:info@neft.ru">info@neft.ru</a></p>
+                            <p><a href="mailto:sales@neft.ru">sales@neft.ru</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-lang="ru">Время работы</h3>
+                            <h3 data-lang="en" style="display: none;">Working Hours</h3>
+                            <p data-lang="ru">Пн-Пт: 9:00 - 18:00</p>
+                            <p data-lang="ru">Сб: 10:00 - 16:00</p>
+                            <p data-lang="ru">Вс: выходной</p>
+                            <p data-lang="en" style="display: none;">Mon-Fri: 9:00 - 18:00</p>
+                            <p data-lang="en" style="display: none;">Sat: 10:00 - 16:00</p>
+                            <p data-lang="en" style="display: none;">Sun: closed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3 data-lang="ru">Наше местоположение</h3>
+                        <h3 data-lang="en" style="display: none;">Our Location</h3>
+                        <p data-lang="ru">Здесь будет интерактивная карта с нашим офисом</p>
+                        <p data-lang="en" style="display: none;">Interactive map with our office will be here</p>
+                        <button class="btn btn-outline map-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span data-lang="ru">Открыть в картах</span>
+                            <span data-lang="en" style="display: none;">Open in Maps</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form -->
+    <section id="quote" class="quote-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang="ru">Запросить коммерческое предложение</h2>
+                <h2 data-lang="en" style="display: none;">Request Commercial Offer</h2>
+                <p data-lang="ru">Заполните форму, и мы подготовим персональное предложение в течение 24 часов</p>
+                <p data-lang="en" style="display: none;">Fill out the form and we will prepare a personalized offer within 24 hours</p>
+            </div>
+            
+            <div class="form-container">
+                <form id="quote-form" class="quote-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="company-name" data-lang="ru">Название компании *</label>
+                            <label for="company-name" data-lang="en" style="display: none;">Company Name *</label>
+                            <input type="text" id="company-name" name="company-name" required>
+                            <span class="form-error" id="company-name-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-person" data-lang="ru">Контактное лицо *</label>
+                            <label for="contact-person" data-lang="en" style="display: none;">Contact Person *</label>
+                            <input type="text" id="contact-person" name="contact-person" required>
+                            <span class="form-error" id="contact-person-error"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email" data-lang="ru">Email *</label>
+                            <label for="email" data-lang="en" style="display: none;">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" data-lang="ru">Телефон *</label>
+                            <label for="phone" data-lang="en" style="display: none;">Phone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <span class="form-error" id="phone-error"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="country" data-lang="ru">Страна *</label>
+                            <label for="country" data-lang="en" style="display: none;">Country *</label>
+                            <select id="country" name="country" required>
+                                <option value="" data-lang="ru">Выберите страну</option>
+                                <option value="" data-lang="en" style="display: none;">Select country</option>
+                                <option value="ru" data-lang="ru">Россия</option>
+                                <option value="ru" data-lang="en" style="display: none;">Russia</option>
+                                <option value="by" data-lang="ru">Беларусь</option>
+                                <option value="by" data-lang="en" style="display: none;">Belarus</option>
+                                <option value="kz" data-lang="ru">Казахстан</option>
+                                <option value="kz" data-lang="en" style="display: none;">Kazakhstan</option>
+                                <option value="de" data-lang="ru">Германия</option>
+                                <option value="de" data-lang="en" style="display: none;">Germany</option>
+                                <option value="fr" data-lang="ru">Франция</option>
+                                <option value="fr" data-lang="en" style="display: none;">France</option>
+                                <option value="it" data-lang="ru">Италия</option>
+                                <option value="it" data-lang="en" style="display: none;">Italy</option>
+                                <option value="other" data-lang="ru">Другое</option>
+                                <option value="other" data-lang="en" style="display: none;">Other</option>
+                            </select>
+                            <span class="form-error" id="country-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="industry" data-lang="ru">Отрасль</label>
+                            <label for="industry" data-lang="en" style="display: none;">Industry</label>
+                            <select id="industry" name="industry">
+                                <option value="" data-lang="ru">Выберите отрасль</option>
+                                <option value="" data-lang="en" style="display: none;">Select industry</option>
+                                <option value="automotive" data-lang="ru">Автомобильная промышленность</option>
+                                <option value="automotive" data-lang="en" style="display: none;">Automotive industry</option>
+                                <option value="packaging" data-lang="ru">Упаковка</option>
+                                <option value="packaging" data-lang="en" style="display: none;">Packaging</option>
+                                <option value="construction" data-lang="ru">Строительство</option>
+                                <option value="construction" data-lang="en" style="display: none;">Construction</option>
+                                <option value="chemical" data-lang="ru">Химическая промышленность</option>
+                                <option value="chemical" data-lang="en" style="display: none;">Chemical industry</option>
+                                <option value="textile" data-lang="ru">Текстильная промышленность</option>
+                                <option value="textile" data-lang="en" style="display: none;">Textile industry</option>
+                                <option value="other" data-lang="ru">Другое</option>
+                                <option value="other" data-lang="en" style="display: none;">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="products-interest" data-lang="ru">Интересующая продукция *</label>
+                        <label for="products-interest" data-lang="en" style="display: none;">Products of Interest *</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="products" value="petroleum">
+                                <span class="checkbox-custom"></span>
+                                <span data-lang="ru">Нефтепродукты</span>
+                                <span data-lang="en" style="display: none;">Petroleum Products</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="products" value="polymers">
+                                <span class="checkbox-custom"></span>
+                                <span data-lang="ru">Полимеры</span>
+                                <span data-lang="en" style="display: none;">Polymers</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="products" value="specialty">
+                                <span class="checkbox-custom"></span>
+                                <span data-lang="ru">Специальная химия</span>
+                                <span data-lang="en" style="display: none;">Specialty Chemicals</span>
+                            </label>
+                        </div>
+                        <span class="form-error" id="products-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="volume" data-lang="ru">Ожидаемый объем поставок</label>
+                        <label for="volume" data-lang="en" style="display: none;">Expected Supply Volume</label>
+                        <select id="volume" name="volume">
+                            <option value="" data-lang="ru">Выберите объем</option>
+                            <option value="" data-lang="en" style="display: none;">Select volume</option>
+                            <option value="small" data-lang="ru">До 100 тонн/месяц</option>
+                            <option value="small" data-lang="en" style="display: none;">Up to 100 tons/month</option>
+                            <option value="medium" data-lang="ru">100-1000 тонн/месяц</option>
+                            <option value="medium" data-lang="en" style="display: none;">100-1000 tons/month</option>
+                            <option value="large" data-lang="ru">Более 1000 тонн/месяц</option>
+                            <option value="large" data-lang="en" style="display: none;">More than 1000 tons/month</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" data-lang="ru">Дополнительная информация</label>
+                        <label for="message" data-lang="en" style="display: none;">Additional Information</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Укажите специфические требования, сроки поставки, сертификаты и другую важную информацию"></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="privacy" required>
+                            <span class="checkbox-custom"></span>
+                            <span data-lang="ru">Я согласен на обработку персональных данных *</span>
+                            <span data-lang="en" style="display: none;">I agree to the processing of personal data *</span>
+                        </label>
+                        <span class="form-error" id="privacy-error"></span>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter">
+                            <span class="checkbox-custom"></span>
+                            <span data-lang="ru">Подписаться на новости и акции</span>
+                            <span data-lang="en" style="display: none;">Subscribe to news and promotions</span>
+                        </label>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-lang="ru">Отправить запрос</span>
+                            <span data-lang="en" style="display: none;">Send Request</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang="ru">Другие способы связи</h2>
+                <h2 data-lang="en" style="display: none;">Other Ways to Contact</h2>
+            </div>
+            
+            <div class="methods-grid">
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 data-lang="ru">Онлайн-чат</h3>
+                    <h3 data-lang="en" style="display: none;">Online Chat</h3>
+                    <p data-lang="ru">Быстрые ответы на ваши вопросы в режиме реального времени</p>
+                    <p data-lang="en" style="display: none;">Quick answers to your questions in real time</p>
+                    <button class="btn btn-outline chat-btn" data-lang="ru">Начать чат</button>
+                    <button class="btn btn-outline chat-btn" data-lang="en" style="display: none;">Start Chat</button>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 data-lang="ru">Видеозвонок</h3>
+                    <h3 data-lang="en" style="display: none;">Video Call</h3>
+                    <p data-lang="ru">Персональная консультация с нашими специалистами</p>
+                    <p data-lang="en" style="display: none;">Personal consultation with our specialists</p>
+                    <button class="btn btn-outline video-btn" data-lang="ru">Записаться</button>
+                    <button class="btn btn-outline video-btn" data-lang="en" style="display: none;">Schedule</button>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 data-lang="ru">Встреча в офисе</h3>
+                    <h3 data-lang="en" style="display: none;">Office Meeting</h3>
+                    <p data-lang="ru">Личная встреча в нашем офисе для обсуждения деталей</p>
+                    <p data-lang="en" style="display: none;">Personal meeting at our office to discuss details</p>
+                    <button class="btn btn-outline meeting-btn" data-lang="ru">Записаться</button>
+                    <button class="btn btn-outline meeting-btn" data-lang="en" style="display: none;">Schedule</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang="ru">Часто задаваемые вопросы</h2>
+                <h2 data-lang="en" style="display: none;">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4 data-lang="ru">Сколько времени занимает подготовка коммерческого предложения?</h4>
+                        <h4 data-lang="en" style="display: none;">How long does it take to prepare a commercial offer?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-lang="ru">Мы подготавливаем персональное коммерческое предложение в течение 24 часов после получения вашего запроса.</p>
+                        <p data-lang="en" style="display: none;">We prepare a personalized commercial offer within 24 hours of receiving your request.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4 data-lang="ru">В какие страны вы осуществляете поставки?</h4>
+                        <h4 data-lang="en" style="display: none;">Which countries do you deliver to?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-lang="ru">Мы осуществляем поставки в 25+ стран мира, включая страны Европы, СНГ и Азии. Полный список доступен на странице "О компании".</p>
+                        <p data-lang="en" style="display: none;">We deliver to 25+ countries worldwide, including Europe, CIS and Asia. The full list is available on the "About Us" page.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4 data-lang="ru">Предоставляете ли вы сертификаты качества?</h4>
+                        <h4 data-lang="en" style="display: none;">Do you provide quality certificates?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-lang="ru">Да, все наши продукты имеют соответствующие сертификаты качества и соответствуют международным стандартам.</p>
+                        <p data-lang="en" style="display: none;">Yes, all our products have appropriate quality certificates and comply with international standards.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4 data-lang="ru">Какие минимальные объемы поставки?</h4>
+                        <h4 data-lang="en" style="display: none;">What are the minimum supply volumes?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-lang="ru">Минимальные объемы зависят от типа продукции. Обычно это от 1 тонны для нефтепродуктов и от 100 кг для полимеров.</p>
+                        <p data-lang="en" style="display: none;">Minimum volumes depend on the type of product. Usually from 1 ton for petroleum products and from 100 kg for polymers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="images/logo.svg" alt="Нефть" class="footer-logo">
+                        <span class="brand-text">Нефть</span>
+                    </div>
+                    <p data-lang="ru">Надежный поставщик нефтепродуктов и полимеров для промышленности</p>
+                    <p data-lang="en" style="display: none;">Reliable supplier of petroleum products and polymers for industry</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-lang="ru">Продукция</h4>
+                    <h4 data-lang="en" style="display: none;">Products</h4>
+                    <ul>
+                        <li><a href="products/petroleum.html" data-lang="ru">Нефтепродукты</a><a href="products/petroleum.html" data-lang="en" style="display: none;">Petroleum Products</a></li>
+                        <li><a href="products/polymers.html" data-lang="ru">Полимеры</a><a href="products/polymers.html" data-lang="en" style="display: none;">Polymers</a></li>
+                        <li><a href="products/specialty.html" data-lang="ru">Специальная химия</a><a href="products/specialty.html" data-lang="en" style="display: none;">Specialty Chemicals</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-lang="ru">Компания</h4>
+                    <h4 data-lang="en" style="display: none;">Company</h4>
+                    <ul>
+                        <li><a href="about.html" data-lang="ru">О нас</a><a href="about.html" data-lang="en" style="display: none;">About Us</a></li>
+                        <li><a href="contacts.html" data-lang="ru">Контакты</a><a href="contacts.html" data-lang="en" style="display: none;">Contacts</a></li>
+                        <li><a href="contacts.html#quote" data-lang="ru">Коммерческое предложение</a><a href="contacts.html#quote" data-lang="en" style="display: none;">Commercial Offer</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-lang="ru">Контакты</h4>
+                    <h4 data-lang="en" style="display: none;">Contacts</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                        <p><i class="fas fa-envelope"></i> info@neft.ru</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Примерная, 123</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ООО "Нефть". <span data-lang="ru">Все права защищены.</span><span data-lang="en" style="display: none;">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/contacts.js"></script>
+</body>
+</html>

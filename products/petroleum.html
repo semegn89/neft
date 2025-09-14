@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нефтепродукты | ООО "Нефть"</title>
+    <meta name="description" content="Качественные нефтепродукты: бензин с добавками MTBE/ETBE, дизельное топливо, пропилен-оксид, уксусная кислота. Быстрая доставка по ЕС и СНГ.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="../images/logo.svg" alt="Нефть" class="logo">
+                    <span class="brand-text">Нефть</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Главная</a></li>
+                    <li class="dropdown">
+                        <a href="#products" class="nav-link active">Продукция <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="petroleum.html" class="active">Нефтепродукты</a></li>
+                            <li><a href="polymers.html">Полимеры</a></li>
+                            <li><a href="specialty.html">Специальная химия</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../about.html" class="nav-link">О компании</a></li>
+                    <li><a href="../contacts.html" class="nav-link">Контакты</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="ru">RU</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                    <a href="../contacts.html#quote" class="btn btn-primary">Запросить предложение</a>
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="../index.html" data-lang="ru">Главная</a>
+                <a href="../index.html" data-lang="en" style="display: none;">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <a href="#products" data-lang="ru">Продукция</a>
+                <a href="#products" data-lang="en" style="display: none;">Products</a>
+                <span class="breadcrumb-separator">/</span>
+                <span data-lang="ru">Нефтепродукты</span>
+                <span data-lang="en" style="display: none;">Petroleum Products</span>
+            </div>
+            
+            <h1 data-lang="ru">Нефтепродукты</h1>
+            <h1 data-lang="en" style="display: none;">Petroleum Products</h1>
+            
+            <p class="page-subtitle" data-lang="ru">Высококачественные нефтепродукты для различных отраслей промышленности</p>
+            <p class="page-subtitle" data-lang="en" style="display: none;">High-quality petroleum products for various industrial sectors</p>
+        </div>
+    </section>
+
+    <!-- Search and Filters -->
+    <section class="search-filters">
+        <div class="container">
+            <div class="search-bar">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Поиск по каталогу..." data-lang="ru">
+                    <input type="text" id="search-input" placeholder="Search catalog..." data-lang="en" style="display: none;">
+                </div>
+                <div id="search-results" class="search-results"></div>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all" data-lang="ru">Все продукты</button>
+                <button class="filter-btn active" data-category="all" data-lang="en" style="display: none;">All Products</button>
+                <button class="filter-btn" data-category="gasoline" data-lang="ru">Бензин</button>
+                <button class="filter-btn" data-category="gasoline" data-lang="en" style="display: none;">Gasoline</button>
+                <button class="filter-btn" data-category="diesel" data-lang="ru">Дизельное топливо</button>
+                <button class="filter-btn" data-category="diesel" data-lang="en" style="display: none;">Diesel Fuel</button>
+                <button class="filter-btn" data-category="chemicals" data-lang="ru">Химические продукты</button>
+                <button class="filter-btn" data-category="chemicals" data-lang="en" style="display: none;">Chemical Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Gasoline with MTBE -->
+                <div class="product-card" data-category="gasoline">
+                    <div class="product-image">
+                        <img src="../images/products/gasoline-mtbe.jpg" alt="Бензин с добавками MTBE" loading="lazy">
+                        <div class="product-badge">Популярный</div>
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3 data-lang="ru">Бензин с добавками MTBE</h3>
+                        <h3 data-lang="en" style="display: none;">Gasoline with MTBE additives</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            Высокооктановый бензин с добавлением метил-трет-бутилового эфира (MTBE) для повышения октанового числа и улучшения характеристик сгорания.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            High-octane gasoline with methyl tert-butyl ether (MTBE) additives to increase octane number and improve combustion characteristics.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Октановое число:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Octane number:</span>
+                                <span class="spec-value">95-98</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Содержание MTBE:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">MTBE content:</span>
+                                <span class="spec-value">до 15%</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Температура кипения:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Boiling point:</span>
+                                <span class="spec-value">30-200°C</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gasoline with ETBE -->
+                <div class="product-card" data-category="gasoline">
+                    <div class="product-image">
+                        <img src="../images/products/gasoline-etbe.jpg" alt="Бензин с добавками ETBE" loading="lazy">
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3 data-lang="ru">Бензин с добавками ETBE</h3>
+                        <h3 data-lang="en" style="display: none;">Gasoline with ETBE additives</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            Качественный бензин с добавлением этил-трет-бутилового эфира (ETBE) - экологически чистой добавки для повышения октанового числа.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            Quality gasoline with ethyl tert-butyl ether (ETBE) additives - environmentally friendly additive to increase octane number.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Октановое число:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Octane number:</span>
+                                <span class="spec-value">95-98</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Содержание ETBE:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">ETBE content:</span>
+                                <span class="spec-value">до 15%</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Экологический класс:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Environmental class:</span>
+                                <span class="spec-value">Евро-5</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diesel Fuel -->
+                <div class="product-card" data-category="diesel">
+                    <div class="product-image">
+                        <img src="../images/products/diesel-fuel.jpg" alt="Дизельное топливо" loading="lazy">
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3 data-lang="ru">Дизельное топливо</h3>
+                        <h3 data-lang="en" style="display: none;">Diesel Fuel</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            Качественное дизельное топливо для различных типов дизельных двигателей. Соответствует международным стандартам качества.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            Quality diesel fuel for various types of diesel engines. Meets international quality standards.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Цетановое число:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Cetane number:</span>
+                                <span class="spec-value">51-55</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Содержание серы:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Sulfur content:</span>
+                                <span class="spec-value">< 10 ppm</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Температура застывания:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Pour point:</span>
+                                <span class="spec-value">до -35°C</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Propylene Oxide -->
+                <div class="product-card" data-category="chemicals">
+                    <div class="product-image">
+                        <img src="../images/products/propylene-oxide.jpg" alt="Пропилен-оксид" loading="lazy">
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3 data-lang="ru">Пропилен-оксид</h3>
+                        <h3 data-lang="en" style="display: none;">Propylene Oxide</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            Важный химический продукт для производства полиуретанов, пропиленгликолей и других химических соединений.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            Important chemical product for the production of polyurethanes, propylene glycols and other chemical compounds.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Чистота:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Purity:</span>
+                                <span class="spec-value">99.9%</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Температура кипения:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Boiling point:</span>
+                                <span class="spec-value">34.2°C</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Плотность:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Density:</span>
+                                <span class="spec-value">0.83 g/cm³</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Acetic Acid -->
+                <div class="product-card" data-category="chemicals">
+                    <div class="product-image">
+                        <img src="../images/products/acetic-acid.jpg" alt="Уксусная кислота" loading="lazy">
+                    </div>
+                    
+                    <div class="product-content">
+                        <h3 data-lang="ru">Уксусная кислота</h3>
+                        <h3 data-lang="en" style="display: none;">Acetic Acid</h3>
+                        
+                        <p class="product-description" data-lang="ru">
+                            Концентрированная уксусная кислота для химической промышленности. Используется в производстве ацетатов, текстильной и пищевой промышленности.
+                        </p>
+                        <p class="product-description" data-lang="en" style="display: none;">
+                            Concentrated acetic acid for chemical industry. Used in the production of acetates, textile and food industry.
+                        </p>
+                        
+                        <div class="product-specs">
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Концентрация:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Concentration:</span>
+                                <span class="spec-value">99.8%</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Температура кипения:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Boiling point:</span>
+                                <span class="spec-value">118.1°C</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label" data-lang="ru">Фасовка:</span>
+                                <span class="spec-label" data-lang="en" style="display: none;">Packaging:</span>
+                                <span class="spec-value">ИБЦ, цистерны</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <a href="#quote" class="btn btn-primary">
+                                <i class="fas fa-file-alt"></i>
+                                <span data-lang="ru">Получить КП</span>
+                                <span data-lang="en" style="display: none;">Get Quote</span>
+                            </a>
+                            <button class="btn btn-outline spec-toggle">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-lang="ru">Спецификация</span>
+                                <span data-lang="en" style="display: none;">Specification</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Modal -->
+    <div id="spec-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Спецификация продукта</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-specs"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section id="quote" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-lang="ru">Нужна консультация по нефтепродуктам?</h2>
+                <h2 data-lang="en" style="display: none;">Need consultation on petroleum products?</h2>
+                <p data-lang="ru">Наши специалисты помогут подобрать оптимальное решение для ваших задач</p>
+                <p data-lang="en" style="display: none;">Our specialists will help you find the optimal solution for your tasks</p>
+                <a href="../contacts.html" class="btn btn-primary btn-large">Связаться с нами</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="../images/logo.svg" alt="Нефть" class="footer-logo">
+                        <span class="brand-text">Нефть</span>
+                    </div>
+                    <p data-lang="ru">Надежный поставщик нефтепродуктов и полимеров для промышленности</p>
+                    <p data-lang="en" style="display: none;">Reliable supplier of petroleum products and polymers for industry</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-lang="ru">Продукция</h4>
+                    <h4 data-lang="en" style="display: none;">Products</h4>
+                    <ul>
+                        <li><a href="petroleum.html" data-lang="ru">Нефтепродукты</a><a href="petroleum.html" data-lang="en" style="display: none;">Petroleum Products</a></li>
+                        <li><a href="polymers.html" data-lang="ru">Полимеры</a><a href="polymers.html" data-lang="en" style="display: none;">Polymers</a></li>
+                        <li><a href="specialty.html" data-lang="ru">Специальная химия</a><a href="specialty.html" data-lang="en" style="display: none;">Specialty Chemicals</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-lang="ru">Компания</h4>
+                    <h4 data-lang="en" style="display: none;">Company</h4>
+                    <ul>
+                        <li><a href="../about.html" data-lang="ru">О нас</a><a href="../about.html" data-lang="en" style="display: none;">About Us</a></li>
+                        <li><a href="../contacts.html" data-lang="ru">Контакты</a><a href="../contacts.html" data-lang="en" style="display: none;">Contacts</a></li>
+                        <li><a href="../contacts.html#quote" data-lang="ru">Коммерческое предложение</a><a href="../contacts.html#quote" data-lang="en" style="display: none;">Commercial Offer</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-lang="ru">Контакты</h4>
+                    <h4 data-lang="en" style="display: none;">Contacts</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                        <p><i class="fas fa-envelope"></i> info@neft.ru</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Примерная, 123</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ООО "Нефть". <span data-lang="ru">Все права защищены.</span><span data-lang="en" style="display: none;">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/products.js"></script>
+</body>
+</html>
