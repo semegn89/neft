@@ -57,3 +57,14 @@ node_modules/
 # Temporary folders
 tmp/
 temp/
+
+# Image placeholders (replace with actual images)
+images/bg.jpg
+images/products/*.jpg
+images/products/*.png
+images/certificates/*.jpg
+images/certificates/*.png
+images/team/*.jpg
+images/team/*.png
+images/about/*.jpg
+images/about/*.png

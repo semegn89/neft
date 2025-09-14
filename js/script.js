@@ -14,73 +14,51 @@ document.addEventListener('DOMContentLoaded', function() {
 // Language Switcher
 function initLanguageSwitcher() {
     const langButtons = document.querySelectorAll('.lang-btn');
-    const elements = document.querySelectorAll('[data-lang]');
+    
+    function switchLanguage(targetLang) {
+        const elements = document.querySelectorAll('[data-lang]');
+        
+        // Update active button
+        langButtons.forEach(btn => {
+            btn.classList.remove('active');
+            if (btn.getAttribute('data-lang') === targetLang) {
+                btn.classList.add('active');
+            }
+        });
+        
+        // Show/hide language elements with timeout for smooth transition
+        elements.forEach(element => {
+            const elementLang = element.getAttribute('data-lang');
+            if (elementLang === targetLang) {
+                element.style.display = '';
+                element.style.visibility = 'visible';
+                element.style.opacity = '1';
+            } else {
+                element.style.display = 'none';
+                element.style.visibility = 'hidden';
+                element.style.opacity = '0';
+            }
+        });
+        
+        // Store language preference
+        localStorage.setItem('selectedLanguage', targetLang);
+        
+        console.log('Language switched to:', targetLang);
+    }
     
     langButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
             const selectedLang = this.getAttribute('data-lang');
-            
-            // Update active button
-            langButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-            
-            // Show/hide language elements
-            elements.forEach(element => {
-                const elementLang = element.getAttribute('data-lang');
-                if (elementLang === selectedLang) {
-                    element.style.display = '';
-                    element.style.visibility = 'visible';
-                } else {
-                    element.style.display = 'none';
-                    element.style.visibility = 'hidden';
-                }
-            });
-            
-            // Store language preference
-            localStorage.setItem('selectedLanguage', selectedLang);
-            
-            // Force reflow to ensure changes are applied
-            document.body.offsetHeight;
+            switchLanguage(selectedLang);
         });
     });
     
-    // Load saved language preference
-    const savedLang = localStorage.getItem('selectedLanguage');
-    if (savedLang) {
-        const savedButton = document.querySelector(`[data-lang="${savedLang}"]`);
-        if (savedButton) {
-            // Manually trigger language switch without click
-            langButtons.forEach(btn => btn.classList.remove('active'));
-            savedButton.classList.add('active');
-            
-            elements.forEach(element => {
-                const elementLang = element.getAttribute('data-lang');
-                if (elementLang === savedLang) {
-                    element.style.display = '';
-                    element.style.visibility = 'visible';
-                } else {
-                    element.style.display = 'none';
-                    element.style.visibility = 'hidden';
-                }
-            });
-        }
-    } else {
-        // Default to Russian
-        const ruButton = document.querySelector('[data-lang="ru"]');
-        if (ruButton) {
-            ruButton.classList.add('active');
-            elements.forEach(element => {
-                const elementLang = element.getAttribute('data-lang');
-                if (elementLang === 'ru') {
-                    element.style.display = '';
-                    element.style.visibility = 'visible';
-                } else {
-                    element.style.display = 'none';
-                    element.style.visibility = 'hidden';
-                }
-            });
-        }
-    }
+    // Load saved language preference or default to Russian
+    const savedLang = localStorage.getItem('selectedLanguage') || 'ru';
+    setTimeout(() => {
+        switchLanguage(savedLang);
+    }, 100);
 }
 
 // Smooth Scrolling for Navigation Links
