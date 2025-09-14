@@ -9,14 +9,49 @@ document.addEventListener('DOMContentLoaded', function() {
     initProductFilters();
     initContactForm();
     initSearchFunctionality();
+    
+    // Backup language switcher in case main one fails
+    setTimeout(() => {
+        const buttons = document.querySelectorAll('.lang-btn');
+        if (buttons.length > 0) {
+            buttons.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const lang = this.getAttribute('data-lang');
+                    console.log('Backup switcher activated for:', lang);
+                    
+                    // Simple fallback switching
+                    document.querySelectorAll('[data-lang]').forEach(el => {
+                        if (el.getAttribute('data-lang') === lang) {
+                            el.style.display = '';
+                        } else {
+                            el.style.display = 'none';
+                        }
+                    });
+                    
+                    // Update active button
+                    buttons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Store preference
+                    localStorage.setItem('selectedLanguage', lang);
+                    document.documentElement.setAttribute('lang', lang);
+                });
+            });
+        }
+    }, 500);
 });
 
 // Language Switcher
 function initLanguageSwitcher() {
+    console.log('Initializing language switcher...');
     const langButtons = document.querySelectorAll('.lang-btn');
+    console.log('Found buttons:', langButtons.length);
     
-        function switchLanguage(targetLang) {
-            const elements = document.querySelectorAll('[data-lang]:not(.lang-btn)');
+    function switchLanguage(targetLang) {
+        console.log('Switching to language:', targetLang);
+        const elements = document.querySelectorAll('[data-lang]:not(.lang-btn)');
+        console.log('Found elements to switch:', elements.length);
         
         // Update active button
         langButtons.forEach(btn => {
@@ -26,7 +61,7 @@ function initLanguageSwitcher() {
             }
         });
         
-        // Show/hide language elements with timeout for smooth transition
+        // Show/hide language elements
         elements.forEach(element => {
             const elementLang = element.getAttribute('data-lang');
             if (elementLang === targetLang) {
@@ -40,37 +75,41 @@ function initLanguageSwitcher() {
             }
         });
         
-            // Store language preference
-            localStorage.setItem('selectedLanguage', targetLang);
-            
-            // Update <html lang="...">
-            document.documentElement.setAttribute('lang', targetLang);
-            
-            // Update title and meta description
-            const title = document.querySelector('title[data-lang="' + targetLang + '"]');
-            const description = document.querySelector('meta[name="description"][data-lang="' + targetLang + '"]');
-            
-            if (title) {
-                document.title = title.textContent;
-            }
-            
-            if (description) {
-                description.setAttribute('content', description.getAttribute('content'));
-            }
+        // Store language preference
+        localStorage.setItem('selectedLanguage', targetLang);
+        
+        // Update <html lang="...">
+        document.documentElement.setAttribute('lang', targetLang);
+        
+        // Update title and meta description
+        const title = document.querySelector('title[data-lang="' + targetLang + '"]');
+        const description = document.querySelector('meta[name="description"][data-lang="' + targetLang + '"]');
+        
+        if (title) {
+            document.title = title.textContent;
+        }
+        
+        if (description) {
+            description.setAttribute('content', description.getAttribute('content'));
+        }
         
         console.log('Language switched to:', targetLang);
     }
     
+    // Add click event listeners
     langButtons.forEach(button => {
+        console.log('Adding listener to button:', button);
         button.addEventListener('click', function(e) {
             e.preventDefault();
             const selectedLang = this.getAttribute('data-lang');
+            console.log('Button clicked, language:', selectedLang);
             switchLanguage(selectedLang);
         });
     });
     
     // Load saved language preference or default to Russian
     const savedLang = localStorage.getItem('selectedLanguage') || 'ru';
+    console.log('Loading saved language:', savedLang);
     setTimeout(() => {
         switchLanguage(savedLang);
     }, 100);
